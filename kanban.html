@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Orders Kanban Board</title>
+<link rel="stylesheet" href="kanban.css">
+</head>
+<body>
+  <h1>Restaurant Orders Kanban Board</h1>
+  <div class="board">
+    <!-- To Do Column -->
+    <div class="column" data-status="todo">
+      <h2>To Do</h2>
+      <div class="card-list" id="todo">
+        <div class="card" draggable="true">Order #101 - Paneer Butter Masala</div>
+        <div class="card" draggable="true">Order #102 - Veg Biryani</div>
+        <div class="card" draggable="true">Order #103 - Masala Dosa</div>
+      </div>
+    </div>
+
+    <!-- In Progress Column -->
+    <div class="column" data-status="progress">
+      <h2>In Progress</h2>
+      <div class="card-list" id="progress">
+        <div class="card" draggable="true">Order #104 - Chicken Curry</div>
+        <div class="card" draggable="true">Order #105 - Butter Naan</div>
+      </div>
+    </div>
+
+    <!-- Done Column -->
+    <div class="column" data-status="done">
+      <h2>Done</h2>
+      <div class="card-list" id="done">
+        <div class="card" draggable="true">Order #100 - Dal Tadka</div>
+        <div class="card" draggable="true">Order #099 - Chole Bhature</div>
+      </div>
+    </div>
+  </div>
+  <script src="kanban.js"></script>
+</body>
+</html>
